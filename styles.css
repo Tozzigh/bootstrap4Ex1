@@ -1,0 +1,57 @@
+i{
+  font-family: 'Lobster';
+  font-size: 25px !important;
+}
+.modal-dialog{
+  width: 600px !important;
+}
+
+h4{
+  color: grey;
+  padding-right: 12px;
+  padding-top: 12px;
+  text-align: right;
+}
+.card-text{
+  color: grey;
+}
+.card-foot{
+  margin:20px;
+  margin-top:0px;
+  display: flex;
+}
+#uno{
+  border:0;
+}
+.btnShareModal{
+  border: solid #ddd 1px;
+  margin-top: 18px;
+  border-radius: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: white;
+  display: inline-block;
+}
+.btnView {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: white;
+}
+.btnView:hover {
+  outline: none;
+  background-color: #ddd;
+}
+.btnView:focus {
+  outline: none;
+  background-color: #666;
+  filter: invert(100%);
+}
+.col{
+  min-width: 350px;
+  width: 100%;
+}
+.card{
+  margin-bottom: 0px;
+}
