@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>The Instagram Photo Feed</title>
+  </head>
+  <body>
+<!--MODAL-->
+    <div class="modal" id="firstModal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="form-group w-100">
+                        <textarea type="text" class="form-control"></textarea>
+                        <button class="btnShareModal rounded bg-white py-1 mt-3" onclick=""><img src="https://img.icons8.com/material/24/000000/camera.png"/></button>
+                        <button class="btnShareModal rounded bg-white py-1 mt-3" onclick=""><img src="https://img.icons8.com/ios-filled/24/000000/marker.png"/></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--MODAL-->
+<!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <div class="container">
+            <i class="h1 font-weight-bold"><img class="" src="https://img.icons8.com/metro/26/000000/instagram-new.png"/>Instagram</i>
+            <div class="nav navbar-nav navbar-right">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#firstModal">Create a new post</button>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://img.icons8.com/ios-filled/26/000000/settings.png"/>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--NAVBAR-->
+<!--BUTTONS-->
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active bg-white" id="pills-grid-tab" data-toggle="pill" href="#pills-grid" role="tab" aria-controls="pills-home" aria-selected="true"><img src="https://img.icons8.com/metro/26/000000/activity-grid-2.png"/></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link bg-white" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="https://img.icons8.com/ios-glyphs/30/000000/view-headline.png"/></a>
+        </li>
+    </ul>
+<!--BUTTONS-->
+<!--JUMB-->
+    <div class="jumbotron pt-0">
+        <div class="tab-content">
+<!--GRID-->
+            <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                </div>
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                    <div class="col-sm-3 p-0"><img src="https://via.placeholder.com/800x500" class="card-img"></div>
+                </div>
+            </div>
+<!--GRID-->
+<!--LIST-->
+            <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/1</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/2</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/3</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/4</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/5</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/6</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/7</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/8</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 mx-auto d-block">
+                        <div class="card mt-5">
+                            <div class="head m-3">
+                                <h3 class="float-left">My first photo</h3>
+                                <h4 class="float-right text-secondary">12/9</h4>
+                            </div>
+                            <img src="https://via.placeholder.com/800x500" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-likes">13 Likes</h5>
+                                <h5 class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</h5>
+                            </div>
+                            <div class="card-foot">
+                                <img class="float-left m-3" src="https://img.icons8.com/ios/30/000000/like.png"/>
+                                <input class="form-control-sm float-left border-0 m-2" type="text" placeholder="Comment...">
+                                <img class="float-right m-3" src="https://img.icons8.com/small/32/000000/menu-2.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--LIST-->
+        </div>
+    </div>
+<!--JUMB-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
